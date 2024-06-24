@@ -1,5 +1,5 @@
 import app from './app';
-import './style.css' // we can import our CSS in JS which is pretty cool
+import './style.css'
 
 const mainEl = document.querySelector('main');
 
