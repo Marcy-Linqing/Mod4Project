@@ -40,12 +40,12 @@ export const renderPokemon = (body, pokemon) => {
 		pokemon.forms[0].name.slice(1);
 	baseStats.textContent = `Base Stats:`;
 	img.src = pokemon.sprites.front_default;
-	p1.textContent = pokemon.stats[0].base_stat;
-	p2.textContent = pokemon.stats[1].base_stat;
-	p3.textContent = pokemon.stats[2].base_stat;
-	p4.textContent = pokemon.stats[3].base_stat;
-	p5.textContent = pokemon.stats[4].base_stat;
-	p6.textContent = pokemon.stats[5].base_stat;
+	p1.textContent = `HP: ${pokemon.stats[0].base_stat}`;
+	p2.textContent = `Attack: ${pokemon.stats[1].base_stat}`;
+	p3.textContent = `Defense: ${pokemon.stats[2].base_stat}`;
+	p4.textContent = `Special Attack: ${pokemon.stats[3].base_stat}`;
+	p5.textContent = `Special Defense: ${pokemon.stats[4].base_stat}`;
+	p6.textContent = `Speed: ${pokemon.stats[5].base_stat}`;
 
 	imageDiv.append(img);
 	statsDiv.append(p1, p2, p3, p4, p5, p6);
