@@ -11,7 +11,7 @@ export const handleSubmit = async (event) => {
   ul.innerHTML = "";
   if (!response[0]) {
     const p = document.createElement("p");
-    p.textContent = "no data";
+    p.textContent = "Pokemon not found";
     ul.append(p);
   } else {
     const pokemon = response[0];
