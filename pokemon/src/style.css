@@ -66,4 +66,11 @@ button:focus-visible {
   #pokemon-list {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
+  h2::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+h2::first-letter {
+  text-transform: capitalize;
 }

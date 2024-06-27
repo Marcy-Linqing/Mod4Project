@@ -14,7 +14,7 @@ export const fetchAndRenderPokemonList = async (
     li.id = pokemon.id;
     const img = document.createElement("img");
 
-    const p = document.createElement("p");
+    const p = document.createElement("h2");
     img.src = pokemon.sprites.front_default;
     p.textContent = pokemon.name;
     li.append(img, p);
