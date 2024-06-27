@@ -19,7 +19,7 @@ export default async function app(appDiv) {
 	const pokemonListUL = document.querySelector("#pokemon-list");
 	fetchAndRenderPokemonList(pokemonListUL, pokemonList);
 
-	const pokemon = await getPokemon(1);
+	const pokemon = await getPokemon(1025);
 	console.log(pokemon);
 	const body = document.querySelector("body");
 	renderPokemon(body, pokemon);

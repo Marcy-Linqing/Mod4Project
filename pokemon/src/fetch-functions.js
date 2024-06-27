@@ -1,6 +1,6 @@
-export const getPokemonList = async () => {
+export const getPokemonList = async (num) => {
 	try {
-		const url = `https://pokeapi.co/api/v2/pokemon/?limit=10`;
+		const url = `https://pokeapi.co/api/v2/pokemon/?limit=13`;
 
 		const response = await fetch(url);
 		if (!response.ok) throw new Error("Failed to load Pokemon list");
@@ -14,7 +14,7 @@ export const getPokemonList = async () => {
 
 export const getPokemon = async (urlKey) => {
 	try {
-		const url = `https://pokeapi.co/api/v2/pokemon/1`;
+		const url = `https://pokeapi.co/api/v2/pokemon/${urlKey}`;
 		const response = await fetch(url);
 		if (!response.ok) throw new Error("Failed to load a Pokemon");
 		const jsonData = await response.json();
