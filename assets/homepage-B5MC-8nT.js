@@ -1,0 +1,1 @@
+import{r as e}from"./render-functions-nmpT15OQ.js";async function t(o){const n=`https://pokeapi.co/api/v2/pokemon/${o}`;return(await fetch(n)).json()}function r(){const o=window.location.search;return new URLSearchParams(o).get("id")}async function s(){const o=r();if(o){const n=await t(o);e(n)}}s();
